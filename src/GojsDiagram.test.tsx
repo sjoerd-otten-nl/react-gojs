@@ -121,7 +121,7 @@ describe('<GojsDiagram />', () => {
                     keyIndex++;
                     return keyIndex;
                 }}
-                copyNodeDataFunction={(data, model) => {
+                copyNodeDataFunction={data => {
                     keyIndex++;
                     let newdata = Object.assign({}, data);
                     newdata.key = keyIndex;
